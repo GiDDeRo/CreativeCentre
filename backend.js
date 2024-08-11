@@ -50,17 +50,16 @@ openCloseIcon.addEventListener("click", e=> {
 
 function contactBtn (element) {
     let phoneNumber = "2348111923106";
-    let url = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(customMessage)}`;
 
     element.addEventListener("click", e=> {
         let customMessage = "Hello there, I want to ";
-    
+        let url = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(customMessage)}`;
         window.open(url, '_blank');
     });
     
     orderBtn.addEventListener("click", e=> {
         let customMessage = "Hello there, I want to place an order";
-    
+        let url = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(customMessage)}`;
         window.open(url, '_blank');
     });
 
