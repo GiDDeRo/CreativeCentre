@@ -84,7 +84,7 @@ header >nav > ul > li:hover{
     display: grid;
     align-items: center;
     padding: 1rem 3rem;
-    height: 40rem;
+    height: 600px;
     background-image: url(./Resources/B1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
