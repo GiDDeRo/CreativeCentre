@@ -64,7 +64,7 @@ function contactBtn (element) {
     });
 
     callBtn.addEventListener("click", e=> {
-        window.location.href = `tel${phoneNumber}`;
+        window.location.href = `tel:+${phoneNumber}`;
     });
 };
 
