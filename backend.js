@@ -1,5 +1,5 @@
 const Link = document.querySelectorAll("ul > a");
-const customBtn = document.querySelector(".customBtn");
+const customBtn = document.querySelectorAll(".chatBtn");
 const orderBtn = document.querySelector(".btn");
 const callBtn = document.querySelector(".call");
 const open =  document.getElementById("open");
@@ -48,10 +48,10 @@ openCloseIcon.addEventListener("click", e=> {
     }
 });
 
-function contactBtn () {
+function contactBtn (element) {
     let phoneNumber = "2349159003843";
-    customBtn.addEventListener("click", e=> {
-        let customMessage = "Hello there, I want to ?";
+    element.addEventListener("click", e=> {
+        let customMessage = "Hello there, I want to ";
     
         let url = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(customMessage)}`;
     
@@ -72,4 +72,4 @@ function contactBtn () {
 };
 
 Link.forEach(clickLink);
-contactBtn();
+customBtn.forEach(contactBtn);
