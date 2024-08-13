@@ -347,14 +347,16 @@ header >nav > ul > li:hover{
         display: grid;
         width: 100vw;
         padding: 2rem 1.5rem;
-        background-color: hsla(0, 7%, 80%, 0.3);
+        background-color: hsla(0, 7%, 80%, 0.5);
         backdrop-filter: blur(5px);
         margin-top: auto;
     }
     .home-body h1 {
         font-size: 23px;
     }
-
+    .home-body p {
+        font-weight: 500;
+    }
     .About > div > img {
         width: 100%;
     }
